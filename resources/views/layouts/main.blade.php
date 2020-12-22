@@ -3,9 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>La Molisana</title>
-
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         {{-- Style --}}
@@ -24,7 +22,5 @@
 
         {{-- FOOTER --}}
         @include('partials.footer')
-
-        <main></main>
     </body>
 </html>

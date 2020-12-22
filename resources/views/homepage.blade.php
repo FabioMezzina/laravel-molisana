@@ -1,3 +1,4 @@
+{{-- Extends main layout --}}
 @extends('layouts.main')
 
 @section('main-content')
