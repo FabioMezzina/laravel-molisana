@@ -13,6 +13,6 @@
 <section class="product">
   <img src="{{ $product['src-h'] }}" alt="{{ $product['titolo'] }}">
   <img src="{{ $product['src-p'] }}" alt="{{ $product['titolo'] }}">
-  <p>{{ $product['descrizione'] }}</p>
+  <p>{!! $product['descrizione'] !!}</p>
 </section>
 @endsection

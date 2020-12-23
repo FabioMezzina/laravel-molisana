@@ -22,6 +22,7 @@ Route::get('/', function () {
     $lunghe = [];
     $corte = [];
     $cortissime = [];
+    $id = 0;
 
     foreach($data as $key => $pasta) {
         $pasta['id'] = $key;
@@ -37,7 +38,7 @@ Route::get('/', function () {
     }
 
     // return view('homepage', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
-    return view('homepage', compact('lunghe', 'corte', 'cortissime')); 
+    return view('homepage', compact('lunghe', 'corte', 'cortissime', 'id')); 
 });
 
 // Product route
