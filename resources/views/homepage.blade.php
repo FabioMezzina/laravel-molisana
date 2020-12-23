@@ -9,4 +9,3 @@
     {{-- Pasta Cortissima --}}
     @include('partials.pasta-type-section', ['type' => $cortissime, 'title' => 'LE CORTISSIME'])
 @endsection
-

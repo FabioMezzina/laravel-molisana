@@ -23,7 +23,8 @@ Route::get('/', function () {
     $corte = [];
     $cortissime = [];
 
-    foreach($data as $pasta) {
+    foreach($data as $key => $pasta) {
+        $pasta['id'] = $key;
         if($pasta['tipo'] === 'lunga') {
             $lunghe[] = $pasta;
         }
@@ -35,11 +36,14 @@ Route::get('/', function () {
         }
     }
 
-    return view('homepage', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
-    // return view('homepage', compact('lunghe', 'corte', 'cortissime')); 
+    // return view('homepage', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime]);
+    return view('homepage', compact('lunghe', 'corte', 'cortissime')); 
 });
 
 // Product route
-Route::get('/product/', function() {
-    return view('product');
+Route::get('/product/{id}', function($id) {
+    $data = config('pasta-db');
+    $product = $data[$id];
+    $length = count($data) - 1;
+    return view('product', compact('product', 'id', 'length'));
 })->name('product');

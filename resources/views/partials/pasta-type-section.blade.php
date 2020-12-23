@@ -6,7 +6,7 @@
       <div class="wrapper-pasta">
         <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
         <p class="name">{{ $pasta['titolo'] }}</p>
-        <a href="#">More info</a>
+        <a href="{{ route('product', $pasta['id']) }}">More info</a>
       </div>
     @endforeach
   </div>
