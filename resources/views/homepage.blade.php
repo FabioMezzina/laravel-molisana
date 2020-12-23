@@ -2,46 +2,11 @@
 @extends('layouts.main')
 
 @section('main-content')
-    {{-- Pasta lunga --}}
-    @if(! empty($lunghe))
-    <h2>LE LUNGHE</h2>
-        <div class="flex f-wrap">
-            @foreach($lunghe as $pasta)
-                <div class="wrapper-pasta">
-                    <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
-                    <p class="name">{{ $pasta['titolo'] }}</p>
-                    <a href="#">More info</a>
-                </div>
-            @endforeach
-        </div>
-    @endif
-    
+    {{-- Pasta Lunga --}}
+    @include('partials.pasta-type-section', ['type' => $lunghe, 'title' => 'LE LUNGHE'])
     {{-- Pasta Corta --}}
-    @if(! empty($corte))
-    <h2>LE CORTE</h2>
-        <div class="flex f-wrap">
-            @foreach($corte as $pasta)
-                <div class="wrapper-pasta">
-                    <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
-                    <p class="name">{{ $pasta['titolo'] }}</p>
-                    <a href="#">More info</a>
-                </div>
-            @endforeach
-        </div>
-    @endif
-
+    @include('partials.pasta-type-section', ['type' => $corte, 'title' => 'LE CORTE'])
     {{-- Pasta Cortissima --}}
-    @if(! empty($cortissime))
-    <h2>LE CORTISSIME</h2>
-        <div class="flex f-wrap">
-            @foreach($cortissime as $pasta)
-                <div class="wrapper-pasta">
-                    <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
-                    <p class="name">{{ $pasta['titolo'] }}</p>
-                    <a href="#">More info</a>
-                </div>
-            @endforeach
-        </div>
-    @endif
+    @include('partials.pasta-type-section', ['type' => $cortissime, 'title' => 'LE CORTISSIME'])
 @endsection
 
