@@ -6,6 +6,7 @@
 
 body {
   background-color: $bg-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -18,4 +19,15 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+// Lists
+ul {
+  list-style: none;
+}
+
+// CTA
+a {
+  color: $main-color;
+  text-decoration: none;
 }

@@ -1,9 +1,9 @@
-<nav>
+<nav class="navbar">
   <div class="container">
-    <ul class="flex">
-      <li><a href="/">HOME</a></li>
-      <li><a href="{{ route('product', $id), }}">PRODUCT</a></li>
-      <li><a href="">NEWS</a></li>
+    <ul class="flex jc-center">
+      <li><a href="/">Home</a></li>
+      <li><a href="{{ route('product', $id), }}">Prodotti</a></li>
+      <li><a href="">News</a></li>
     </ul>
   </div>
 </nav>

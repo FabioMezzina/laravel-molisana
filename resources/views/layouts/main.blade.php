@@ -12,6 +12,8 @@
     <body class="text-center">
         {{-- HEADER --}}
         @include('partials.header')
+        
+        {{-- NAVBAR --}}
         @include('partials.navbar')
 
         {{-- MAIN CONTENT --}}

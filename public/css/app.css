@@ -6,6 +6,7 @@
 
 body {
   background-color: #eee;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -19,8 +20,21 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
+}
+
+.jc-center {
+  justify-content: center;
 }
 
 .f-wrap {
@@ -34,5 +48,20 @@ img {
 .wrapper-pasta {
   margin: 10px 1%;
   flex-basis: 30%;
+}
+
+.navbar li {
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.navbar li:hover {
+  background: #b2e5fc;
+}
+
+.navbar li a {
+  font-size: 22px;
+  font-weight: 500;
 }
 

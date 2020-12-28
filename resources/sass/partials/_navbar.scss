@@ -1,0 +1,14 @@
+.navbar {
+  li {
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: .1s;
+    &:hover {
+      background:$product-color;
+    }
+    a {
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+}
