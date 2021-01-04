@@ -17,7 +17,7 @@
         @include('partials.navbar')
 
         {{-- MAIN CONTENT --}}
-        <main>
+        <main class="main-section">
             <div class="container">
                 @yield('main-content')
             </div>

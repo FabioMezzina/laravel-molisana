@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: $main-font;
 }
 
 body {
-  background-color: $bg-color;
+  background-color: $white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,6 +25,11 @@ img {
 // Lists
 ul {
   list-style: none;
+}
+
+// title
+h2 {
+  font-size: $h2-font;
 }
 
 // CTA

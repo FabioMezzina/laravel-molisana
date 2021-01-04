@@ -4,9 +4,7 @@
   <div class="flex f-wrap">
     @foreach($type as $pasta)
       <div class="wrapper-pasta">
-        <img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}">
-        <p class="name">{{ $pasta['titolo'] }}</p>
-        <a href="{{ route('product', $pasta['id']) }}">More info</a>
+        <a href="{{ route('product', $pasta['id']) }}"><img src="{{ $pasta['src'] }}" alt="{{ $pasta['titolo'] }}"></a>
       </div>
     @endforeach
   </div>

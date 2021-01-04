@@ -1,0 +1,44 @@
+.footer-section {
+  padding: 90px 0 130px;
+  text-align: left;
+  color: $footer-color;
+  background-image: url('../images/footer-montagne-bottom.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  h2 {
+    font-weight: 600;
+  }
+  a {
+    color: inherit;
+  }
+  .contacts {
+    margin-right: 30px;
+    flex-basis: 32%;
+    p,
+    a {
+      font-weight: 600;
+      font-size: .9rem;
+    }
+  }
+}
+
+.footer-menu {
+  flex-grow: 1;
+  div {
+    padding: 5px;
+    flex-basis: 50%;
+    &.prodotti {
+      order: 2;
+    }
+    &.collezione-chef {
+      order: 1;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+  }
+}

@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 body {
-  background-color: #eee;
+  background-color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -22,6 +23,10 @@ img {
 
 ul {
   list-style: none;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 a {
@@ -45,9 +50,26 @@ a {
   text-align: center;
 }
 
-.wrapper-pasta {
-  margin: 10px 1%;
-  flex-basis: 30%;
+.header-section {
+  padding: 60px 0;
+}
+
+.main-section {
+  padding: 70px 0 50px;
+  background-image: url("../images/fondo-pag-speciali.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-section h2 {
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 600;
+  color: #002d73;
+}
+.main-section .wrapper-pasta {
+  margin: 5px;
+  flex-basis: 32%;
 }
 
 .navbar li {
@@ -60,5 +82,50 @@ a {
 }
 .navbar li a {
   font-size: 22px;
+  font-weight: 500;
+}
+
+.footer-section {
+  padding: 90px 0 130px;
+  text-align: left;
+  color: #848d9b;
+  background-image: url("../images/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.footer-section h2 {
+  font-weight: 600;
+}
+.footer-section a {
+  color: inherit;
+}
+.footer-section .contacts {
+  margin-right: 30px;
+  flex-basis: 32%;
+}
+.footer-section .contacts p,
+.footer-section .contacts a {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer-menu {
+  flex-grow: 1;
+}
+.footer-menu div {
+  padding: 5px;
+  flex-basis: 50%;
+}
+.footer-menu div.prodotti {
+  order: 2;
+}
+.footer-menu div.collezione-chef {
+  order: 1;
+}
+.footer-menu div h2 {
+  margin-bottom: 20px;
+}
+.footer-menu div li {
+  margin-bottom: 10px;
   font-weight: 500;
 }

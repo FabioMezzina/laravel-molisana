@@ -25,7 +25,9 @@ Route::get('/', function () {
     $id = 0;
 
     foreach($data as $key => $pasta) {
+        // add a 'id' property to each array element set as the current index position
         $pasta['id'] = $key;
+        // generate the three arrays
         if($pasta['tipo'] === 'lunga') {
             $lunghe[] = $pasta;
         }
@@ -48,3 +50,8 @@ Route::get('/product/{id}', function($id) {
     $length = count($data) - 1;
     return view('product', compact('product', 'id', 'length'));
 })->name('product');
+
+// News route
+Route::get('/news', function() {
+    return view('news');
+})->name('news');
