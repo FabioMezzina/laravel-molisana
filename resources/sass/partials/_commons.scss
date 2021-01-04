@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 // Img responsive
@@ -36,4 +36,18 @@ h2 {
 a {
   color: $main-color;
   text-decoration: none;
+}
+
+// Responsive container - medium
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+// Responsive container - small
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
 }

@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 32px;
 }
 
 img {
@@ -34,6 +34,16 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
 .flex {
   display: flex;
 }
@@ -57,9 +67,7 @@ a {
 .main-section {
   padding: 70px 0 50px;
   background-image: url("../images/fondo-pag-speciali.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
 }
 .main-section h2 {
   margin-bottom: 10px;
@@ -72,6 +80,17 @@ a {
   flex-basis: 32%;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-section .wrapper-pasta {
+    flex-basis: 48%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section .wrapper-pasta {
+    margin: 15px;
+    flex-basis: 100%;
+  }
+}
 .navbar li {
   padding: 15px 15px;
   cursor: pointer;
@@ -128,4 +147,13 @@ a {
 .footer-menu div li {
   margin-bottom: 10px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-section .container {
+    display: block;
+  }
+  .footer-section .footer-menu {
+    display: block;
+  }
 }

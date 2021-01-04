@@ -42,3 +42,15 @@
     }
   }
 }
+
+// Responsive footer - medium
+@media screen and (max-width: 1200px) {
+  .footer-section {
+    .container {
+      display: block;
+    }
+    .footer-menu {
+      display: block;
+    }
+  }
+}

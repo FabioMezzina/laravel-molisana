@@ -1,9 +1,7 @@
 .main-section {
   padding: 70px 0 50px;
   background-image: url('../images/fondo-pag-speciali.jpg');
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   h2 {
     margin-bottom: 10px;
     text-align: left;
@@ -13,5 +11,20 @@
   .wrapper-pasta {
     margin: 5px;
     flex-basis: 32%;
+  }
+}
+
+// Responsive main content - medium
+@media screen and (max-width: 1200px) {
+  .main-section .wrapper-pasta {
+    flex-basis: 48%;
+  }
+}
+
+// Responsive main content - extra small
+@media screen and (max-width: 768px) {
+  .main-section .wrapper-pasta {
+    margin: 15px;
+    flex-basis: 100%;
   }
 }
