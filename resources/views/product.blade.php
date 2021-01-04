@@ -1,18 +1,21 @@
 @extends('layouts.main')
 
 @section('main-content')
-  {{-- CTA NAVIGATION --}}
-  @if($id > 0)
-    <a href="{{ route('product', $id - 1) }}">PREV</a>
-  @endif
-  @if($id < $length)
-    <a href="{{ route('product', $id + 1) }}">NEXT</a>
-  @endif
-
-  {{-- PRODUCT DETAILS --}}
-  <section class="product">
-    <img src="{{ $product['src-h'] }}" alt="{{ $product['titolo'] }}">
-    <img src="{{ $product['src-p'] }}" alt="{{ $product['titolo'] }}">
-    <p>{!! $product['descrizione'] !!}</p>
-  </section>
+  <main class="main-section prod">
+    <div class="container">
+      {{-- PRODUCT DETAILS --}}
+      <section class="product">
+          {{-- CTA NAVIGATION --}}
+          @if($id > 0)
+            <a class="prev" href="{{ route('product', $id - 1) }}">&lt;</a>
+          @endif
+          @if($id < $length)
+            <a class="next" href="{{ route('product', $id + 1) }}">&gt;</a>
+          @endif
+          <img src="{{ $product['src-h'] }}" alt="{{ $product['titolo'] }}">
+          <img src="{{ $product['src-p'] }}" alt="{{ $product['titolo'] }}">
+          <div class="description">{!! $product['descrizione'] !!}</div>
+        </section>
+    </div>
+  </main>
 @endsection

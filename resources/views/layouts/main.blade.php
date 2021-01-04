@@ -17,11 +17,11 @@
         @include('partials.navbar')
 
         {{-- MAIN CONTENT --}}
-        <main class="main-section">
-            <div class="container">
+        {{-- <main class="main-section">
+            <div class="container"> --}}
                 @yield('main-content')
-            </div>
-        </main>
+            {{-- </div>
+        </main> --}}
 
         {{-- FOOTER --}}
         @include('partials.footer')

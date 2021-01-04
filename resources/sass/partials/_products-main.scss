@@ -1,0 +1,44 @@
+.main-section.prod {
+  position: relative;
+  background-image: none;
+  background-color: $bg-product;
+}
+
+.product {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 35px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $white;
+    background-color: $white-op;
+    border-radius: 5px;
+    &.prev {
+      left: 0;
+    }
+    &.next {
+      right: 0;
+    }
+  }
+  .description {
+    font-weight: 600;
+    color: $title-color;
+    background-color: $bg-product;
+  }
+}
+
+// Responsive product main - medium
+@media screen and (max-width: 1200px) {
+
+}
+
+// Responsive product main - extra small
+@media screen and (max-width: 768px) {
+
+}
