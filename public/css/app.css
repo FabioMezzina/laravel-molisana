@@ -55,13 +55,10 @@ a {
   cursor: pointer;
   transition: 0.1s;
 }
-
 .navbar li:hover {
   background: #b2e5fc;
 }
-
 .navbar li a {
   font-size: 22px;
   font-weight: 500;
 }
-
