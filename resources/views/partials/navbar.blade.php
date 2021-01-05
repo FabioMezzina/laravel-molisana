@@ -7,9 +7,15 @@
     </span>
     {{-- menu --}}
     <ul class="menu flex jc-center" :class="{visible: visible}">
-      <li><a href="/">Home</a></li>
-      <li><a href="{{ route('product', $id), }}">Prodotti</a></li>
-      <li><a href="{{ route('news') }}">News</a></li>
+      <li class="{{ Request::path() === '/' ? 'current-active' : '' }}">
+        <a href="/">Home</a>
+      </li>
+      <li class="{{ Request::is('product/*') ? 'current-active' : '' }}">
+        <a href="{{ route('product', $id), }}">Prodotti</a>
+      </li>
+      <li class="{{ Request::path() === 'news' ? 'current-active' : '' }}">
+        <a href="{{ route('news') }}">News</a>
+      </li>
     </ul>
   </div>
 </nav>

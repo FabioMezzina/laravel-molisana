@@ -6198,6 +6198,9 @@ a {
   font-size: 26px;
 }
 
+.menu.visible {
+  display: flex;
+}
 .menu li {
   cursor: pointer;
   transition: 0.1s;
@@ -6205,17 +6208,14 @@ a {
 .menu li:hover {
   background: #b2e5fc;
 }
+.menu li.current-active {
+  background: #b2e5fc;
+}
 .menu li a {
   display: block;
   padding: 15px 15px;
   font-size: 22px;
   font-weight: 500;
-}
-.menu.hidden {
-  display: none;
-}
-.menu.visible {
-  display: flex;
 }
 
 @media screen and (max-width: 1200px) {

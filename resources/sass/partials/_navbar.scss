@@ -19,10 +19,17 @@
 }
 
 .menu {
+  // visibility
+  &.visible {
+    display: flex;
+  }
   li {
     cursor: pointer;
     transition: .1s;
     &:hover {
+      background: $product-color;
+    }
+    &.current-active {
       background: $product-color;
     }
     a {
@@ -31,14 +38,6 @@
       font-size: 22px;
       font-weight: 500;
     }
-  }
-  // visibility
-  &.hidden {
-    display: none;
-  }
-
-  &.visible {
-    display: flex;
   }
 }
 
