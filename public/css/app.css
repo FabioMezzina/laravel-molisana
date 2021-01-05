@@ -6178,19 +6178,63 @@ a {
   padding: 60px 0;
 }
 
-.navbar li {
-  padding: 15px 15px;
+.navbar {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.dropdown:hover {
+  border-color: black;
+}
+.dropdown i {
+  font-size: 26px;
+}
+
+.menu li {
   cursor: pointer;
   transition: 0.1s;
 }
-.navbar li:hover {
+.menu li:hover {
   background: #b2e5fc;
 }
-.navbar li a {
+.menu li a {
+  display: block;
+  padding: 15px 15px;
   font-size: 22px;
   font-weight: 500;
 }
+.menu.hidden {
+  display: none;
+}
+.menu.visible {
+  display: flex;
+}
 
+@media screen and (max-width: 1200px) {
+  .dropdown {
+    display: inline-block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    z-index: 1;
+  }
+  .menu li:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
 .main-section {
   padding: 70px 0 50px;
   background-image: url("../images/fondo-pag-speciali.jpg");

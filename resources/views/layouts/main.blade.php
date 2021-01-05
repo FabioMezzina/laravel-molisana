@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         {{-- Style --}}
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <script defer src="{{ asset('js/app.js') }}"></script>
     </head>
     <body class="text-center">
         {{-- HEADER --}}

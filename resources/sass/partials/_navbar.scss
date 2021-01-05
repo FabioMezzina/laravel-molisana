@@ -1,14 +1,62 @@
 .navbar {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: .2s;
+  &:hover {
+    border-color: $black;
+  }
+  i {
+    font-size: 26px;
+  }
+}
+
+.menu {
   li {
-    padding: 15px 15px;
     cursor: pointer;
     transition: .1s;
     &:hover {
-      background:$product-color;
+      background: $product-color;
     }
     a {
+      display: block;
+      padding: 15px 15px;
       font-size: 22px;
       font-weight: 500;
+    }
+  }
+  // visibility
+  &.hidden {
+    display: none;
+  }
+
+  &.visible {
+    display: flex;
+  }
+}
+
+// Responsive navbar - medium
+@media screen and (max-width: 1200px) {
+  .dropdown {
+    display: inline-block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    z-index: 1;
+    li:hover {
+      background: rgba($white, .4);
     }
   }
 }
