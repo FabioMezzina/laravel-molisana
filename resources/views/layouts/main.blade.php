@@ -17,11 +17,7 @@
         @include('partials.navbar')
 
         {{-- MAIN CONTENT --}}
-        {{-- <main class="main-section">
-            <div class="container"> --}}
-                @yield('main-content')
-            {{-- </div>
-        </main> --}}
+        @yield('main-content')
 
         {{-- FOOTER --}}
         @include('partials.footer')

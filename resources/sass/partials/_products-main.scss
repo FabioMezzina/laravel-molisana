@@ -14,11 +14,12 @@
     transform: translateY(-50%);
     height: 50px;
     width: 35px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: $white;
     background-color: $white-op;
     border-radius: 5px;
+    i {
+      font-size: 1.2rem;
+      color: $white;
+    }
     &.prev {
       left: 0;
     }
@@ -27,6 +28,9 @@
     }
   }
   .description {
+    line-height: 1.6rem;
+    font-size: 20px;
+    text-align: left;
     font-weight: 600;
     color: $title-color;
     background-color: $bg-product;
